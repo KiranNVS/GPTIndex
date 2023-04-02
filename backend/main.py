@@ -12,7 +12,10 @@ def read_root():
 
 @app.get("/gptindex", status_code=status.HTTP_200_OK)
 def get_gptindex_response(PromptPayload: schema.PromptPayload):
+
+    query = PromptPayload.query
+    print(query)
+
     # call function
 
     # return response
-    pass
