@@ -3,7 +3,7 @@ from fastapi import FastAPI, BackgroundTasks
 from fastapi import status
 
 import json_schema as schema
-from langchain_sample import *
+from question_answering import *
 
 app = FastAPI()
 
