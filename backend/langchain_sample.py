@@ -9,7 +9,7 @@ LLM = "EleutherAI/gpt-neo-125M"
 
 
 class QuestionAnswering:
-    def __init__(self, texts: list[str], prompt: PromptTemplate) -> None:
+    def __init__(self, texts: list[str]) -> None:
         self.texts = texts
         self.embeddings = self.get_embeddings()
         self.vector_store = self.get_vector_store()
@@ -41,9 +41,9 @@ class QuestionAnswering:
         llm = HuggingFacePipeline(pipeline=pipe)
         return llm
 
-    def query(self, entity: str) -> str:
+    def query(self, prompt) -> str:
         final_prompt = prompt.format(
-            context=self.get_context(entity), entity=entity)
+            context=self.get_context(prompt), entity=prompt)
         print(f"Final prompt: {final_prompt}\n{50 * '='}")
         return self.llm(final_prompt)
 
@@ -55,12 +55,9 @@ if __name__ == "__main__":
         "The white cat jumps over the lazy dog.",
     ]
 
-    PROMPT_TEMPLATE = "{context}\n\nWhat color is the {entity}?"
 
-    prompt = PromptTemplate(
-        input_variables=["context", "entity"],
-        template=PROMPT_TEMPLATE
-    )
+    qa = QuestionAnswering(texts)
 
-    qa = QuestionAnswering(texts, prompt)
-    print(qa.query("cat"))
+    query = "What color is the cat?"
+    response = qa.query(query)
+    print(response)
