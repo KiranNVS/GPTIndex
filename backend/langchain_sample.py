@@ -23,10 +23,10 @@ class QuestionAnswering:
         faiss = FAISS.from_texts(self.texts, self.embeddings)
         return faiss
 
-    def get_context(self, entity) -> list[str]:
+    def get_context(self, query) -> list[str]:
         def get_text(x): return x[0].page_content
-        context_texts = [get_text(
-            doc) for doc in self.vector_store.similarity_search_with_score(entity, 1)]
+        context_texts = [get_text(doc)
+                         for doc in self.vector_store.similarity_search_with_score(query, 1)]
         context = '\n'.join(context_texts)
         return context
 
@@ -41,11 +41,13 @@ class QuestionAnswering:
         llm = HuggingFacePipeline(pipeline=pipe)
         return llm
 
-    def query(self, prompt) -> str:
-        final_prompt = prompt.format(
-            context=self.get_context(prompt), entity=prompt)
-        print(f"Final prompt: {final_prompt}\n{50 * '='}")
-        return self.llm(final_prompt)
+    def query(self, query) -> str:
+        prompt = "{context}\n\n{query}".format(
+            context=self.get_context(query),
+            query=query
+        )
+        print(f"Prompt: {prompt}\n{50 * '='}")
+        return self.llm(prompt)
 
 
 if __name__ == "__main__":
@@ -54,7 +56,6 @@ if __name__ == "__main__":
         "The slow black elephant walks over the lazy dog.",
         "The white cat jumps over the lazy dog.",
     ]
-
 
     qa = QuestionAnswering(texts)
 
