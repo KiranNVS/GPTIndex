@@ -4,12 +4,14 @@ from langchain.prompts import PromptTemplate
 from langchain.vectorstores import FAISS
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
+from typing import *
+
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 LLM = "EleutherAI/gpt-neo-125M"
 
 
 class QuestionAnswering:
-    def __init__(self, texts: list[str]) -> None:
+    def __init__(self, texts: List[str]) -> None:
         self.texts = texts
         self.embeddings = self.get_embeddings()
         self.vector_store = self.get_vector_store()
@@ -23,7 +25,7 @@ class QuestionAnswering:
         faiss = FAISS.from_texts(self.texts, self.embeddings)
         return faiss
 
-    def get_context(self, query) -> list[str]:
+    def get_context(self, query) -> List[str]:
         def get_text(x): return x[0].page_content
         context_texts = [get_text(doc)
                          for doc in self.vector_store.similarity_search_with_score(query, 1)]
@@ -50,15 +52,15 @@ class QuestionAnswering:
         return self.llm(prompt)
 
 
-if __name__ == "__main__":
-    texts = [
-        "The quick brown fox jumps over the lazy dog.",
-        "The slow black elephant walks over the lazy dog.",
-        "The white cat jumps over the lazy dog.",
-    ]
+# if __name__ == "__main__":
+#     texts = [
+#         "The quick brown fox jumps over the lazy dog.",
+#         "The slow black elephant walks over the lazy dog.",
+#         "The white cat jumps over the lazy dog.",
+#     ]
 
-    qa = QuestionAnswering(texts)
+#     qa = QuestionAnswering(texts)
 
-    query = "What color is the cat?"
-    response = qa.query(query)
-    print(response)
+#     query = "What color is the cat?"
+#     response = qa.query(query)
+#     print(response)
