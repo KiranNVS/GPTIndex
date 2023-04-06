@@ -1,7 +1,4 @@
 import openai
-import json
-from time import sleep
-import numpy as np
 
 
 def request_api(prompt: str, parameters: dict):

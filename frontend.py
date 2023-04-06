@@ -1,7 +1,5 @@
-import time
-import requests
 import streamlit as st
-import openai
+
 from openai_utils import request_api, parse_api_result
 
 
