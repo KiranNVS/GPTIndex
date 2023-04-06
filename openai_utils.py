@@ -47,7 +47,6 @@ def request_api(prompt: str, parameters: dict):
 
     return response
 
-
 def parse_api_result(result, parameters):
     
     text_generated = []
@@ -70,19 +69,18 @@ def parse_api_result(result, parameters):
     
     return print_multi_res(parameters)
 
-
-# def parse_api_result_rank(result):
-#     logprob = result['choices'][0]['logprobs']['top_logprobs'][0]
-#     logprob_list = [(x.strip(), logprob[x]) for x in logprob]
-#     sorted_logprob_list = sorted(logprob_list, key=lambda tup: tup[1], reverse=True)
-#     probs = [x[1] for x in sorted_logprob_list]
-#     softmax_prob = np.exp(probs) / np.sum(np.exp(probs), axis=0)
-#     to_return = []
+def parse_api_result_rank(result):
+    logprob = result['choices'][0]['logprobs']['top_logprobs'][0]
+    logprob_list = [(x.strip(), logprob[x]) for x in logprob]
+    sorted_logprob_list = sorted(logprob_list, key=lambda tup: tup[1], reverse=True)
+    probs = [x[1] for x in sorted_logprob_list]
+    softmax_prob = np.exp(probs) / np.sum(np.exp(probs), axis=0)
+    to_return = []
     
-#     for x, p in zip(sorted_logprob_list, softmax_prob):
-#         try:
-#             to_return.append((int(x[0]), p))
-#         except:
-#             continue
+    for x, p in zip(sorted_logprob_list, softmax_prob):
+        try:
+            to_return.append((int(x[0]), p))
+        except:
+            continue
     
     return to_return
