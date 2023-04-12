@@ -7,5 +7,5 @@ streamlit run frontend/main.py
 
 start backend:
 ```
-uvicorn main:app --reload --port=9000
+uvicorn main:app --app-dir=backend/ --reload --port=9000
 ```
