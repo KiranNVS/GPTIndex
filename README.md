@@ -2,7 +2,7 @@
 
 start frontend:
 ```
-streamlit run frontend.py
+streamlit run frontend/main.py
 ```
 
 start backend:
