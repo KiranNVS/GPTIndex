@@ -59,28 +59,28 @@ with st.sidebar:
                                     step=1,
                                     help='Generates multiple completions server-side, and displays only the best. Streaming only works when set to 1. Since it acts as a multiplier on the number of completions, this parameters can eat into your token quota very quickly \u2013 use caution!'
                                     )
+if __name__ == "__main__":
+    st.title("CKIDS Event Forecasting Demo")
 
-st.title("CKIDS Event Forecasting Demo")
+    # Create text input box for user input
+    user_input = st.text_area('Text to complement', 
+                            value='It was the best of times, it was the worst of times, ',
+                            placeholder='',
+                            )
 
-# Create text input box for user input
-user_input = st.text_area('Text to complement', 
-                          value='It was the best of times, it was the worst of times, ',
-                          placeholder='',
-                          )
-
-# Handle user input and API call
-if st.button("Submit"):
-    if not user_input:
-        st.error("Please enter some text.")
-    if not parameters['api_key']:
-        st.error("Please enter your OpenAI API Key")
-    else:
-        # response = request_api(user_input, parameters)
-        query = {'query': user_input}
-        print(f'calling backend with query:, {query}')
-        response = requests.post('http://127.0.0.1:9000/query', json=query)
-        print('response:', response.text)
-        # parsed_response = parse_api_result(response, parameters)
-        
-        st.info("OpenAI API response:")
-        st.write(response.json())
+    # Handle user input and API call
+    if st.button("Submit"):
+        if not user_input:
+            st.error("Please enter some text.")
+        if not parameters['api_key']:
+            st.error("Please enter your OpenAI API Key")
+        else:
+            # response = request_api(user_input, parameters)
+            query = {'query': user_input}
+            print(f'calling backend with query:, {query}')
+            response = requests.post('http://127.0.0.1:9000/query', json=query)
+            print('response:', response.text)
+            # parsed_response = parse_api_result(response, parameters)
+            
+            st.info("OpenAI API response:")
+            st.write(response.json())
