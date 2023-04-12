@@ -4,10 +4,8 @@ altgraph @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot7/ActiveB
 anyio==3.6.1
 async-timeout==4.0.2
 attrs==22.2.0
-beautifulsoup4==4.11.2
-bs4==0.0.1
-certifi==2022.9.14
-charset-normalizer==2.1.1
+certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_477u68wvzm/croot/certifi_1671487773341/work/certifi
+charset-normalizer==3.1.0
 click==8.1.3
 dataclasses-json==0.5.7
 docopt==0.6.2
@@ -55,8 +53,9 @@ tqdm==4.64.1
 transformers==4.27.4
 typing-inspect==0.8.0
 typing_extensions==4.5.0
-urllib3==1.26.12
-Werkzeug==2.2.2
-yarg==0.1.9
-yarl==1.8.2
-zipp==3.8.1
+urllib3==1.26.15
+uvicorn==0.21.1
+transformers
+langchain
+faiss
+openai==0.27.4
