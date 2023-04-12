@@ -8,16 +8,6 @@ from question_answering import *
 
 app = FastAPI()
 
- # initialize texts
-texts = [
-    "The quick brown fox jumps over the lazy dog.",
-    "The slow black elephant walks over the lazy dog.",
-    "The white cat jumps over the lazy dog.",
-]
-
-# initialize class and process documents
-qa = QuestionAnswering(texts)
-print('qa initialized')
 
 @app.get("/")
 def read_root():
@@ -27,6 +17,7 @@ def read_root():
 def get_gptindex_response(PromptPayload: schema.PromptPayload):
 
     query = PromptPayload.query
+    qa = QuestionAnswering(query)
     print(f'query: {query}')
 
     response = qa.query(query)
@@ -34,17 +25,3 @@ def get_gptindex_response(PromptPayload: schema.PromptPayload):
     print(f'GPT-Index response type: {type(response)}')
     print(jsonable_encoder(response))
     return jsonable_encoder(response)
-
-if __name__ == "__main__":
-
-    print('inside main.')
-    # initialize texts
-    texts = [
-        "The quick brown fox jumps over the lazy dog.",
-        "The slow black elephant walks over the lazy dog.",
-        "The white cat jumps over the lazy dog.",
-    ]
-
-    # initialize class and process documents
-    qa = QuestionAnswering(texts)
-    print('qa initialized')
