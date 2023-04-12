@@ -23,7 +23,7 @@ print('qa initialized')
 def read_root():
     return {"Hello": "World"}
 
-@app.get("/query", status_code=status.HTTP_200_OK)
+@app.post("/query", status_code=status.HTTP_200_OK)
 def get_gptindex_response(PromptPayload: schema.PromptPayload):
 
     query = PromptPayload.query
@@ -31,6 +31,8 @@ def get_gptindex_response(PromptPayload: schema.PromptPayload):
 
     response = qa.query(query)
     print(f'GPT-Index response: {response}')
+    print(f'GPT-Index response type: {type(response)}')
+    print(jsonable_encoder(response))
     return jsonable_encoder(response)
 
 if __name__ == "__main__":

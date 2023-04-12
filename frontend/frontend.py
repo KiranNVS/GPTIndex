@@ -1,3 +1,4 @@
+import requests
 import streamlit as st
 
 from openai_utils import request_api, parse_api_result
@@ -74,9 +75,12 @@ if st.button("Submit"):
     if not parameters['api_key']:
         st.error("Please enter your OpenAI API Key")
     else:
-        response = request_api(user_input, parameters)
-
-        parsed_response = parse_api_result(response, parameters)
+        # response = request_api(user_input, parameters)
+        query = {'query': user_input}
+        print(f'calling backend with query:, {query}')
+        response = requests.post('http://127.0.0.1:9000/query', json=query)
+        print('response:', response.text)
+        # parsed_response = parse_api_result(response, parameters)
         
         st.info("OpenAI API response:")
-        st.write(parsed_response)
+        st.write(response.json())
