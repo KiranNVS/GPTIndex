@@ -15,14 +15,12 @@ with st.sidebar:
                                     "Model",
                                     options = ('GPT-4',
                                               'text-davinci-003',
-                                              parameters['model'],
-                                              'code-davinci-002',
-                                              'GPT-Neo 125M',
+                                              'alpaca',
                                               ),
                                     index = 2
                                     )
 
-    if parameters['model'] != 'GPT-Neo 125M':
+    if parameters['model'] != 'alpaca':
         parameters['api_key'] = st.text_input('OpenAI API Token',
                                     type='password',
                                     placeholder='Enter your API key',
@@ -71,15 +69,15 @@ if __name__ == "__main__":
     if st.button('Submit'):
         if not user_input:
             st.error("Please enter some text.")
-        if parameters['api_key'] is '':
+        if parameters['model'] != 'alpaca' and not parameters['api_key']:
             st.error("Please enter your OpenAI API Key")
-        else:
-            payload = {'params': parameters,
-                       'query': user_input,
-                      }
-            
-            response = requests.post('http://127.0.0.1:9000/query', json=payload)
-            
-            st.info("'{}' generated output:".format(parameters['model']))
-            
-            st.write(response.json())
+        
+        payload = {'params': parameters,
+                    'query': user_input,
+                    }
+        
+        response = requests.post('http://127.0.0.1:9000/query', json=payload)
+        
+        st.info("'{}' generated output:".format(parameters['model']))
+        
+        st.write(response.json())
