@@ -57,10 +57,10 @@ class ICEWSDataset:
 
 
 if __name__ == "__main__":
-    dir_path = './'           # parent dir path of the datasets
+    dir_path = '../data'           # parent dir path of the datasets
     dataset_name = 'ICEWS14'  # 'ICEWS14', 'ICEWS05-15', 'ICEWS18'
     mode = 'train'            # train, valid, test
-    idx = (100,110)           # index of facts to retrieve
+    idx = (1400,1415)           # index of facts to retrieve
 
     # usage
     dataset = ICEWSDataset(dir_path, dataset_name, mode, idx)

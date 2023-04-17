@@ -130,3 +130,6 @@ dmypy.json
 
 # openai token file
 openai_config.json
+
+backend/alpaca/*
+backend/index/*
