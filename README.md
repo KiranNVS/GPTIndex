@@ -12,6 +12,11 @@ start frontend:
 streamlit run frontend/main.py
 ```
 
+create index:
+```
+python backend/create_index.py
+```
+
 start backend:
 ```
 uvicorn main:app --app-dir=backend/ --reload --port=9000
