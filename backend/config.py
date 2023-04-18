@@ -13,4 +13,4 @@ PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with 
 ### Response:
 """
 
-INSTRUCTION = "The input is a sequence of events in the format 'subject, predicate, object, time'. This is the only information available to you. Answer the question following question as an event in the same format."
+INSTRUCTION = "The input is a sequence of events in the format 'subject, predicate, object, time'. This is the only information available to you. Answer the following question as an event in the same format."
