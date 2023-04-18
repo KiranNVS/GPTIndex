@@ -3,20 +3,19 @@ import os.path
 
 
 class ICEWSDataset:
-    def __init__(self, dir_path, dataset_name, mode, idx):
+    def __init__(self, dir_path, dataset_name, filename, idx):
         self.path = dir_path
         self.dataset_name = dataset_name
-        self.mode = mode
 
         self.ent2id = self.get_id_dic('entity2id')
         self.rel2id = self.get_id_dic('relation2id')
-        self.data = self.get_facts_by_idx(mode, idx)  # train, valid, test
+        self.data = self.get_facts_by_idx(filename, idx)  # train, valid, test
 
     def load_data(self, filename):
         if self.dataset_name not in ['ICEWS14', 'ICEWS05-15', 'ICEWS18']:
             raise ValueError('Unknown dataset: {}'.format(dataset))
 
-        file = open(os.path.join(self.path, self.dataset_name, filename+'.txt'), 'r')
+        file = open(os.path.join(self.path, self.dataset_name, filename+'.txt'), 'r', encoding='utf-8')
         
         data = []
         for l in file.readlines():
