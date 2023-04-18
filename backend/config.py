@@ -8,6 +8,8 @@ INDEX_PATH = 'backend/index'
 INDEX_ABS_PATH = os.path.join(project_root_path, INDEX_PATH)
 DATA_PATH = 'data'
 DATA_ABS_PATH = os.path.join(project_root_path, DATA_PATH)
+QUESTION_PATH = 'data/question.txt'
+QUESTION_ABS_PATH = os.path.join(project_root_path, QUESTION_PATH)
 SIMILARITY_RESULTS_COUNT = 10
 
 PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
