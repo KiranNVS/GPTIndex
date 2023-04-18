@@ -1,7 +1,7 @@
 import os
 from typing import *
 
-from config import EMBEDDING_MODEL, INDEX_PATH, PROMPT_TEMPLATE, INSTRUCTION
+from config import EMBEDDING_MODEL, INDEX_PATH, PROMPT_TEMPLATE, INSTRUCTION, SIMILARITY_RESULTS_COUNT
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.llms import OpenAI
 from langchain.vectorstores import FAISS
@@ -12,6 +12,7 @@ class QuestionAnswering:
     def __init__(self, parameters: dict):
         self.embeddings = self.get_embeddings()
         self.vector_store = self.get_vector_store(INDEX_PATH)
+        self.is_test_mode = parameters['test_mode']
 
         if parameters['model'] == 'alpaca':
             self.llm = LocalLLM()
@@ -35,18 +36,21 @@ class QuestionAnswering:
         faiss = FAISS.load_local(path, self.embeddings)
         return faiss
 
-    def get_context(self, query) -> List[str]:
+    def get_context(self, query, similarity_results_count) -> List[str]:
         def get_text(x): return x[0].page_content
         context_texts = [get_text(doc)
-                         for doc in self.vector_store.similarity_search_with_score(query, 10)]
+                         for doc in self.vector_store.similarity_search_with_score(query, similarity_results_count)]
         context = '\n'.join(context_texts)
         return context
 
     def query(self, query) -> str:
-        prompt = PROMPT_TEMPLATE.format(
-            instruction=INSTRUCTION,
-            input=self.get_context(query) + '\n\n' + query,
-        )
+        if self.is_test_mode:
+            prompt = self.get_context(query, 1) + '\n\n' + query
+        else:
+            prompt = PROMPT_TEMPLATE.format(
+                instruction=INSTRUCTION,
+                input=self.get_context(query, SIMILARITY_RESULTS_COUNT) + '\n\n' + query,
+            )
         print(f"Prompt: {prompt}\n{50 * '='}")
         return self.llm(prompt)
     

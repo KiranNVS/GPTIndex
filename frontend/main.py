@@ -8,6 +8,7 @@ parameters = {'api_key': '*',  # placeholder
               'top_p': 1.0,
               'best_of': 1,
               # 'logprobs': 10,
+              'test_mode': False
               }
 
 with st.sidebar:
@@ -56,6 +57,11 @@ with st.sidebar:
                                         step=1,
                                         help='Generates multiple completions server-side, and displays only the best. Streaming only works when set to 1. Since it acts as a multiplier on the number of completions, this parameters can eat into your token quota very quickly \u2013 use caution!'
                                         )
+    if parameters['model'] == 'alpaca':
+        parameters['test_mode'] = st.checkbox('Test Mode',
+                                value=parameters['test_mode'],
+                                help='Pass minimal prompt to the model to reduce response time.'
+                                )
 if __name__ == "__main__":
     st.title("CKIDS Event Forecasting Demo")
 

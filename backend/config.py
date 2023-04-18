@@ -1,6 +1,7 @@
 EMBEDDING_MODEL = 'sentence-transformers/all-MiniLM-L6-v2'
 INDEX_PATH = 'backend/index'
 DATA_PATH = 'data'
+SIMILARITY_RESULTS_COUNT = 10
 
 PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 
