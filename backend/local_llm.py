@@ -3,7 +3,7 @@ from typing import List, Optional
 
 from langchain.llms.base import LLM
 
-TIMEOUT_IN_SECONDS = 60
+TIMEOUT_IN_SECONDS = 150
 LLM_COMMAND = "./backend/alpaca/chat"
 MODEL_PATH = "backend/alpaca/ggml-alpaca-7b-q4.bin"
 
