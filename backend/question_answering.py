@@ -1,7 +1,7 @@
 import os
 from typing import *
 
-from config import EMBEDDING_MODEL, INDEX_PATH, PROMPT_TEMPLATE, INSTRUCTION, SIMILARITY_RESULTS_COUNT
+from config import EMBEDDING_MODEL, INDEX_ABS_PATH, PROMPT_TEMPLATE, INSTRUCTION, SIMILARITY_RESULTS_COUNT
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.llms import OpenAI
 from langchain.vectorstores import FAISS
@@ -11,7 +11,7 @@ from local_llm import LocalLLM
 class QuestionAnswering:
     def __init__(self, parameters: dict):
         self.embeddings = self.get_embeddings()
-        self.vector_store = self.get_vector_store(INDEX_PATH)
+        self.vector_store = self.get_vector_store(INDEX_ABS_PATH)
         self.is_test_mode = parameters['test_mode']
 
         if parameters['model'] == 'alpaca':
@@ -30,7 +30,7 @@ class QuestionAnswering:
         return embeddings
 
     def get_vector_store(self, path) -> FAISS:
-        if not os.path.exists(INDEX_PATH):
+        if not os.path.exists(INDEX_ABS_PATH):
             raise Exception(f"Index not found at path {path}!")
 
         faiss = FAISS.load_local(path, self.embeddings)
