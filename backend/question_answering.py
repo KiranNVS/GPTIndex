@@ -45,14 +45,16 @@ class QuestionAnswering:
 
     def query(self, query) -> str:
         if self.is_test_mode:
-            prompt = self.get_context(query, 1) + '\n\n' + query
+            context = self.get_context(query, 1)
+            prompt = context + '\n\n' + query
         else:
+            context = self.get_context(query, SIMILARITY_RESULTS_COUNT)
             prompt = PROMPT_TEMPLATE.format(
                 instruction=INSTRUCTION,
-                input=self.get_context(query, SIMILARITY_RESULTS_COUNT) + '\n\n' + query,
+                input=context + '\n\n' + query,
             )
         print(f"Prompt: {prompt}\n{50 * '='}")
-        return self.llm(prompt)
+        return self.llm(prompt), context
     
 
         
