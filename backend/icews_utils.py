@@ -1,3 +1,4 @@
+from datetime import datetime, timedelta
 import re
 import os.path
 
@@ -35,6 +36,8 @@ class ICEWSDataset:
         return dic
 
     def get_facts_by_idx(self, filename, idx):
+        start_date = '01/01/2018'
+        start_datetime = datetime.strptime(start_date, '%m/%d/%Y')
         text = self.load_data(filename)
 
         quadruples = []
@@ -42,11 +45,11 @@ class ICEWSDataset:
             sub_id = int(l[0])
             rel_id = int(l[1])
             obj_id = int(l[2])
-            t_id = int(l[3])
+            t_id = start_datetime + timedelta(days=int(l[3]))
             quadruples.append([self.ent2id[sub_id],
                                self.rel2id[rel_id],
                                self.ent2id[obj_id],
-                               str(t_id)  # TODO: what to do with time -- sort?
+                               str(t_id.date())  # TODO: what to do with time -- sort?
                                ])
         
         if idx[0] < len(quadruples) and idx[1] < len(quadruples):
