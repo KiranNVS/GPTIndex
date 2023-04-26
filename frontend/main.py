@@ -86,4 +86,7 @@ if __name__ == "__main__":
         
         st.info("'{}' generated output:".format(parameters['model']))
         
-        st.write(response.json())
+        st.write("Answer:")
+        st.write(response.json()['response'])
+        st.write("Context:")
+        st.write(response.json()['context'])

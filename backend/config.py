@@ -25,4 +25,6 @@ PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with 
 ### Response:
 """
 
-INSTRUCTION = "The input is a sequence of events in the format 'subject, predicate, object, time'. This is the only information available to you. Answer the following question as an event in the same format."
+INSTRUCTION = """Imagine that the sequence of events in the format "subject, predicate, object, time" have occured. As an expert at event forecasting, based on the events that have occured predict the missing entity indicated by "???" for the last event template. Simply write the entity name in the response using underscores instead of spaces. If you are unable to predict the missing entity, write "None" in the response."""
+
+"""What would happen next?"""
