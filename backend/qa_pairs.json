@@ -1,0 +1,578 @@
+[
+    {
+        "question": "Will Ishaq_Dar make a statement about Pakistan_Tehreek-e-Insaf on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Ishaq_Dar make a statement about National_Police_Service on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Criminal_(Cuba) make a statement about Yoani_Sánchez on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Criminal_(Cuba) make a statement about Media_(United_States) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Marziyeh_Afkham will make a statement about Government_(United_States) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Marziyeh_Afkham will make a statement about Saira_Afzal_Tarar on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Sammy_Al-Mansoor will make a statement about Moro_Islamic_Liberation_Front on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Sammy_Al-Mansoor will make a statement about China_Airlines on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Other_Authorities_/_Officials_(Bahrain) will arrest, detain, or charge Sheikh_Ali_Salman with legal action on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Other_Authorities_/_Officials_(Bahrain) will arrest, detain, or charge Meng_Jianzhu with legal action on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Police_(Belgium) expected to take any legal action against Citizen_(Belgium) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Police_(Belgium) expected to take any legal action against Gazeta_Wyborcza on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Head_of_Government_(India) expected to consult Governor_(India) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Head_of_Government_(India) expected to consult Jeannot_Kouadio_Ahoussou on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Media_(India) expected to consult Head_of_Government_(India) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Media_(India) expected to consult Employee_(Yemen) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Citizen_(Nigeria) will make an appeal or request to Government_(Nigeria) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Citizen_(Nigeria) will make an appeal or request to Jakrapob_Penkair on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Middle_East make a statement about Defense_/_Security_Ministry_(Yemen) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Middle_East make a statement about Salah_al-Bardawil on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Ashraf_Ghani_Ahmadzai expected to consult Lower_House_of_Parliament_(Afghanistan) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Ashraf_Ghani_Ahmadzai expected to consult Newspaper_(Sudan) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Cabinet_/_Council_of_Ministers_/_Advisors_(Angola) expected to consult Governor_(Angola) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Cabinet_/_Council_of_Ministers_/_Advisors_(Angola) expected to consult Presidential_Candidate_(Mexico) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Police_(Tanzania) expected to take any legal action against Criminal_(Tanzania) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Police_(Tanzania) expected to take any legal action against Governor_(Spain) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Hani_Dahi will make a statement about Information_/_Communication_/_Transparency_Ministry_(Egypt) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Hani_Dahi will make a statement about Employee_(North_Korea) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Court_Judge_(Nigeria) make a statement about Government_(Nigeria) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Court_Judge_(Nigeria) make a statement about Rana_Sanaullah on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Balarabe_Musa will make a statement about Government_(Nigeria) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Balarabe_Musa will make a statement about Military_(Mexico) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Royal_Administration_(Saudi_Arabia) will consult Foreign_Affairs_(South_Korea) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Royal_Administration_(Saudi_Arabia) will consult Guy_Scott on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Antonis_Samaras expected to make a statement about Legislature_(Greece) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Antonis_Samaras expected to make a statement about Lawmaker_(Cyprus) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Kim_Jong-Un make a statement about North_Korea on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Kim_Jong-Un make a statement about News_Editor_(Serbia) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Police_(Gambia) make a statement about Armed_Services_Deserter_(Gambia) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Police_(Gambia) make a statement about Attacker_(Tanzania) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Citizen_(India) expected to make an appeal or request to Indigenous_People_(India) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Citizen_(India) expected to make an appeal or request to Ombudsman_(Slovakia) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Other_Authorities_/_Officials_(China) arrest, detain, or charge Citizen_(South_Korea) with legal action on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Other_Authorities_/_Officials_(China) arrest, detain, or charge Police_(Jordan) with legal action on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Court_Judge_(India) will arrest, detain, or charge Citizen_(India) with legal action on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Court_Judge_(India) will arrest, detain, or charge Republican_Party_(Taiwan) with legal action on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Ishaq_Dar make a statement about Government_(Pakistan) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Ishaq_Dar make a statement about Detainee_(Cote_d'Ivoire) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Ministry_(Egypt) make a statement about Motol_University_Hospital on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Ministry_(Egypt) make a statement about Sergey_Kuzhugetovich_Shoygu on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Marziyeh_Afkham will make a statement about Iran on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Marziyeh_Afkham will make a statement about Presidential_Press_Service_(Department_of_Defense) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Evo_Morales will make a statement about Bolivia on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Evo_Morales will make a statement about Legislature_(Spain) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Eshaq_Jahangiri make a statement about Iran on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Eshaq_Jahangiri make a statement about Envoy_(United_States) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Police_(Tanzania) expected to take any legal action against Citizen_(Tanzania) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Police_(Tanzania) expected to take any legal action against Education_(Argentina) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Ministry_(Kuwait) will consult Foreign_Affairs_(Kuwait) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Ministry_(Kuwait) will consult Representatives_(Yemen) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Liu_Jianchao expected to make a statement about China on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Liu_Jianchao expected to make a statement about Main_Opposition_(Slovakia) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Envoy_(United_States) will make an appeal or request to Congo on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Envoy_(United_States) will make an appeal or request to Party_Member_(Ireland) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Marziyeh_Afkham make a statement about Morocco on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Marziyeh_Afkham make a statement about Priest_(Iran) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Alireza_Bigdeli make an appeal or request to Iran on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Alireza_Bigdeli make an appeal or request to Stephane_Le_Foll on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Foreign_Affairs_(South_Korea) will consult Royal_Administration_(Saudi_Arabia) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Foreign_Affairs_(South_Korea) will consult Defense_/_Security_Ministry_(Myanmar) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Mohammad_Javad_Zarif expected to make a statement about Iran on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Mohammad_Javad_Zarif expected to make a statement about Finance_/_Economy_/_Commerce_/_Trade_Ministry_(Brazil) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Ali_Jannati expected to make a statement about Iran on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Ali_Jannati expected to make a statement about South_West_Africa_People's_Organization on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Police_(Australia) expected to take any legal action against Citizen_(Australia) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Police_(Australia) expected to take any legal action against Cabinet_/_Council_of_Ministers_/_Advisors_(United_States) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Police_(Kenya) expected to take any legal action against Citizen_(Kenya) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Police_(Kenya) expected to take any legal action against Regional_Governor_(Mali) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Barack_Obama consult Raúl_Castro on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Barack_Obama consult John_Tefft on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Afghanistan will make a statement about Armed_Gang_(Afghanistan) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Afghanistan will make a statement about Terrorist_Leader_(Russia) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Oversight_Court_(South_Korea) expected to take any legal action against Airline_(South_Korea) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Oversight_Court_(South_Korea) expected to take any legal action against Human_Rights_Group_(Malaysia) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Court_Judge_(United_Kingdom) arrest, detain, or charge Citizen_(United_Kingdom) with legal action on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Court_Judge_(United_Kingdom) arrest, detain, or charge Terrorist_(Germany) with legal action on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Oodua_Peoples_Congress will make a statement about Oluṣẹgun_Ọbasanjọ on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Oodua_Peoples_Congress will make a statement about High_Ranking_Military_Personnel_(Nigeria) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Umar_al_Bashir consult Xi_Jinping on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Umar_al_Bashir consult Public_Service_Ministry/Department_(South_Africa) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Iran make an appeal or request to Bahrain on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Iran make an appeal or request to Lawmaker_(El_Salvador) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Haider_Al-Abadi make a statement about Iraq on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Haider_Al-Abadi make a statement about Messiria on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Middle_East make a statement about International_Federation_of_Journalists on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Middle_East make a statement about Rebel_Group_(Paraguayan_People's_Army) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Other_Authorities_/_Officials_(Nigeria) expected to make a statement about Farm_Worker_(Nigeria) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Other_Authorities_/_Officials_(Nigeria) expected to make a statement about Nomgcobo_Jiba on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Xi_Jinping consult Umar_al_Bashir on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Xi_Jinping consult Khalaf_Abdul_Samad on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Governor_(India) consult Head_of_Government_(India) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Governor_(India) consult Ahmad_Muhammad_Ali on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Jonathan_Moyo will make a statement about Lawmaker_(Zimbabwe) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Jonathan_Moyo will make a statement about George_Huruma_Mkuchika on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Morocco expected to take any legal action against Criminal_(Morocco) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Morocco expected to take any legal action against Armed_Gang_(Egypt) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Government_(Nigeria) expected to make an appeal or request to Citizen_(Nigeria) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Government_(Nigeria) expected to make an appeal or request to Internal_Security_Operations_Command on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Company_-_Owner_or_Operator_(Nigeria) expected to make an appeal or request to Rauf_Aregbesola on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Company_-_Owner_or_Operator_(Nigeria) expected to make an appeal or request to William_Schabas on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Head_of_Government_(India) will consult Media_(India) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Head_of_Government_(India) will consult Attahiru_Dalhatu_Bafarawa on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Raúl_Castro expected to consult Barack_Obama on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Raúl_Castro expected to consult Citizen_(Brunei) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think François_Hollande will make a statement about France on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think François_Hollande will make a statement about Ministry_(Togo) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is François_Hollande expected to make an appeal or request to France on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is François_Hollande expected to make an appeal or request to Justice_Department/Ministery_(Switzerland) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Head_of_Government_(Pakistan) will make a statement about Government_(Pakistan) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Head_of_Government_(Pakistan) will make a statement about Prapun_Naigowit on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Court_Judge_(Bahrain) make a statement about Head_of_Government_(Bahrain) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Court_Judge_(Bahrain) make a statement about Student_(New_Zealand) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Foreign_Affairs_(Kuwait) expected to consult Ministry_(Kuwait) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Foreign_Affairs_(Kuwait) expected to consult Combatant_(Al-Shabaab) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Education_(Nigeria) will make an appeal or request to Government_(Nigeria) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Education_(Nigeria) will make an appeal or request to Khmer_Rouge on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Police_(South_Korea) expected to take any legal action against Citizen_(South_Korea) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Police_(South_Korea) expected to take any legal action against Borys_Kolesnikov on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Voice_of_the_Voiceless expected to make an appeal or request to Other_Authorities_/_Officials_(Democratic_Republic_of_Congo) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Voice_of_the_Voiceless expected to make an appeal or request to Akitaka_Saiki on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think China will arrest, detain, or charge Citizen_(South_Korea) with legal action on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think China will arrest, detain, or charge Children_(Libya) with legal action on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Will Defense_/_Security_Ministry_(Malaysia) make a statement about Ministry_(Malaysia) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Will Defense_/_Security_Ministry_(Malaysia) make a statement about Ministry_of_Tourism_(China) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Bhim_Singh expected to make an appeal or request to Head_of_Government_(India) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Bhim_Singh expected to make an appeal or request to Ante_Kotromanović on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Lower_House_of_Parliament_(Afghanistan) expected to consult Ashraf_Ghani_Ahmadzai on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Lower_House_of_Parliament_(Afghanistan) expected to consult Retno_Marsudi on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is New_Wafd_Party expected to make a statement about Police_(Egypt) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is New_Wafd_Party expected to make a statement about Business_(Bahrain) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Is Governor_(Angola) expected to consult Cabinet_/_Council_of_Ministers_/_Advisors_(Angola) on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Is Governor_(Angola) expected to consult Defense_/_Security_Ministry_(Lesotho) on 2014-12-31?",
+        "answer": "No"
+    },
+    {
+        "question": "Do you think Head_of_Government_(Palestinian_Territory,_Occupied) will make a statement about UN_Security_Council on 2014-12-31?",
+        "answer": "Yes"
+    },
+    {
+        "question": "Do you think Head_of_Government_(Palestinian_Territory,_Occupied) will make a statement about Newspaper_(Qatar) on 2014-12-31?",
+        "answer": "No"
+    }
+]

@@ -40,7 +40,6 @@ class QuestionAnswering:
         def get_text(x): return x[0].page_content
         def score_filter(x): return x[1] < 1.0
         context = self.vector_store.similarity_search_with_score(query, similarity_results_count)
-        print([x[1] for x in context])
         context = filter(score_filter, context)
         context = map(get_text, context)
         return '\n'.join(context)
@@ -52,8 +51,8 @@ class QuestionAnswering:
         else:
             context = self.get_context(query, SIMILARITY_RESULTS_COUNT)
             prompt = PROMPT_TEMPLATE.format(
-                instruction=INSTRUCTION,
-                input=context + '\n' + query,
+                context=context,
+                question=query,
             )
         print(f"Prompt: {prompt}\n{50 * '='}")
         return self.llm(prompt), context

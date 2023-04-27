@@ -6,15 +6,22 @@ from langchain.vectorstores import FAISS
 
 def main():
     # TODO: Index more data
-    icews_dataset = ICEWSDataset(dir_path=DATA_PATH, dataset_name='ICEWS14', mode='test', idx=[0, 5000])
-    data = [', '.join(d) for d in icews_dataset.data]
+    icews_dataset = ICEWSDataset(dir_path=DATA_PATH, dataset_name='ICEWS14', filename='test', idx=[0, 7370])
+    train, test = [], []
+    for d in icews_dataset.data:
+        if d[3] == '2014-12-31':
+            test.append(d)
+        else:
+            train.append(d)
+    
+    data = [', '.join(d) for d in train]
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
     faiss = FAISS.from_texts(data, embeddings)
     faiss.save_local(INDEX_PATH)
 
-    test_data = ICEWSDataset(dir_path=DATA_PATH, dataset_name='ICEWS14', mode='test', idx=[5001, 5010])
-    test_data = ['(' + ', '.join(d) + ')' for d in test_data.data]
-    print(*test_data, sep='\n')
+    with open('test_quads.txt', 'w', encoding='utf-8') as f:
+        for d in test:
+            f.write(', '.join(d) + '\n')
 
 if __name__ == "__main__":
     main()
