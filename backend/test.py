@@ -24,6 +24,14 @@ def extract_q_a_pairs(path):
             i += 1
     return questions, answers
 
+def extract_q_a_pairs(path):
+    with open('backend/qa_pairs.json', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+        questions = [d['question'] for d in data]
+        answers = [d['answer'] for d in data]   
+
+    return questions, answers
+
 # TODO: how to calculate accuracy?
 # def accuracy_calc(test_result_path):
 
@@ -35,9 +43,11 @@ now = datetime.datetime.now()
 timestamp = now.strftime("%Y-%m-%d-%H-%M-%S")  
 result_file_path = os.path.join(TEST_RESULT_ABS_PATH, "output_" + timestamp + ".txt")
 
-for question in questions:
+for i, question in enumerate(questions):
     response, context = model.query(question)
+    print("question: " + question)
     print("response: " + response)
+    print("answer:" + answers[i])
     result = {
         'question': question,
         'context': context.split('\n'),

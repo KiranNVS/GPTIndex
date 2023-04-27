@@ -4,6 +4,12 @@ import os.path
 
 
 class ICEWSDataset:
+    START_DATES = {
+        'ICEWS05-15': '01/01/2005',
+        'ICEWS14': '01/01/2014',
+        'ICEWS18': '01/01/2018',
+    }
+    
     def __init__(self, dir_path, dataset_name, filename, idx):
         self.path = dir_path
         self.dataset_name = dataset_name
@@ -36,7 +42,7 @@ class ICEWSDataset:
         return dic
 
     def get_facts_by_idx(self, filename, idx):
-        start_date = '01/01/2018'
+        start_date = self.START_DATES[self.dataset_name]
         start_datetime = datetime.strptime(start_date, '%m/%d/%Y')
         text = self.load_data(filename)
 
@@ -45,7 +51,7 @@ class ICEWSDataset:
             sub_id = int(l[0])
             rel_id = int(l[1])
             obj_id = int(l[2])
-            t_id = start_datetime + timedelta(days=int(l[3]))
+            t_id = start_datetime + timedelta(days=int(l[3]) // 24)
             quadruples.append([self.ent2id[sub_id],
                                self.rel2id[rel_id],
                                self.ent2id[obj_id],

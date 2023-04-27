@@ -17,12 +17,40 @@ SIMILARITY_RESULTS_COUNT = 10
 PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 
 ### Instruction:
-{instruction}
+Given the following events, {question}. Output yes or no.
 
 ### Input:
-{input}
+{context}
 
 ### Response:
 """
+# INSTRUCTION = """Imagine that the sequence of events in the format "subject, predicate, object, time" have occured. As an expert at event forecasting, based on the events that have occured answer the yes/no question. Simply write "Yes" or "No" in the answer."""
 
-INSTRUCTION = "The input is a sequence of events in the format 'subject, predicate, object, time'. This is the only information available to you. Answer the following question as an event in the same format."
+# PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+# ### Instruction:
+# {instruction}
+
+# ### Input:
+# {input}
+
+# ### Response:
+# """
+
+# INSTRUCTION = """As an expert at event forecasting, based on the events that have occured answer the yes/no question. Simply write "Yes" or "No" in the answer."""
+
+
+# """What would happen next?"""
+
+
+# PROMPT_TEMPLATE = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+# ### Instruction:
+# Imagine that the sequence of events in the format "subject, predicate, object, time" have occured. As an expert at event forecasting, based on the events that have occured answer the yes/no question. Simply write "Yes" or "No" in the answer.
+
+# ### Input:
+# {context}
+# {question}
+
+# ### Response:
+# """

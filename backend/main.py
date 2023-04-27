@@ -22,8 +22,13 @@ def get_gptindex_response(PromptPayload: schema.PromptPayload):
     print(parameters)
     print(f'query: {query}')
 
-    response, _ = model.query(query)
+    response, context = model.query(query)
     print(f'GPT-Index response: {response}')
     print(f'GPT-Index response type: {type(response)}')
-    print(jsonable_encoder(response))
-    return jsonable_encoder(response)
+    
+    return jsonable_encoder(
+        {
+            "response": response,
+            "context": context
+        }
+    )
