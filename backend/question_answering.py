@@ -1,7 +1,10 @@
-import os
+import os, sys
 from typing import *
 
-from config import EMBEDDING_MODEL, INDEX_ABS_PATH, PROMPT_TEMPLATE, INSTRUCTION, SIMILARITY_RESULTS_COUNT
+lib_path = os.path.abspath(os.path.join(__file__, '..'))
+sys.path.append(lib_path)
+
+from config import EMBEDDING_MODEL, INDEX_ABS_PATH, PROMPT_TEMPLATE, SIMILARITY_RESULTS_COUNT
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.llms import OpenAI
 from langchain.vectorstores import FAISS

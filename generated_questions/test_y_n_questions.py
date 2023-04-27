@@ -1,5 +1,4 @@
 import os
-import json
 import jsonlines
 import sys
 import datetime
@@ -7,35 +6,27 @@ lib_path = os.path.abspath(os.path.join(__file__, '..', '..'))
 sys.path.append(lib_path)
 
 from frontend.main import parameters
-from question_answering import *
-from config import QUESTION_ABS_PATH, TEST_RESULT_ABS_PATH
+from backend.question_answering import *
+from backend.config import QUESTION_ABS_PATH, TEST_RESULT_ABS_PATH
+from question_utils import extract_q_a_pairs
 
-
-def extract_q_a_pairs(path):
-    with open(path, 'r', encoding='utf-8') as f:
-        i = 0
-        questions = []
-        answers = []
-        for line in f:
-            if not i % 2:
-                questions.append(line)
-            else:
-                answers.append(line)
-            i += 1
-    return questions, answers
-
-def extract_q_a_pairs(path):
-    with open('backend/qa_pairs.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-        questions = [d['question'] for d in data]
-        answers = [d['answer'] for d in data]   
-
-    return questions, answers
+# def extract_q_a_pairs(path):
+#     with open(path, 'r', encoding='utf-8') as f:
+#         i = 0
+#         questions = []
+#         answers = []
+#         for line in f:
+#             if not i % 2:
+#                 questions.append(line)
+#             else:
+#                 answers.append(line)
+#             i += 1
+#     return questions, answers
 
 # TODO: how to calculate accuracy?
 # def accuracy_calc(test_result_path):
 
-questions, answers = extract_q_a_pairs(QUESTION_ABS_PATH)
+questions, answers = extract_q_a_pairs(os.path.join(QUESTION_ABS_PATH, 'qa_pairs.json'))
 parameters['model'] = 'alpaca'
 model = QuestionAnswering(parameters)
 
