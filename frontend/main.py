@@ -82,7 +82,7 @@ if __name__ == "__main__":
                     'query': user_input,
                     }
         
-        response = requests.post('http://127.0.0.1:9000/query', json=payload)
+        response = requests.post('http://127.0.0.1:9002/query', json=payload)
         
         st.info("'{}' generated output:".format(parameters['model']))
         
