@@ -134,5 +134,4 @@ openai_config.json
 backend/alpaca/*
 backend/index/*
 
-data/question.txt
 backend/test_result/*

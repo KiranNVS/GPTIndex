@@ -1,4 +1,4 @@
-import os
+import os, sys
 from typing import *
 
 from config import EMBEDDING_MODEL, INDEX_ABS_PATH, PROMPT_TEMPLATE, SIMILARITY_RESULTS_COUNT
