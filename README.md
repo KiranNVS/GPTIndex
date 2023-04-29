@@ -19,7 +19,7 @@ python backend/create_index.py
 
 start backend:
 ```
-uvicorn main:app --app-dir=backend/ --reload --port=9000
+uvicorn main:app --app-dir=backend/ --reload --port=9002
 ```
 
 ## Testing
